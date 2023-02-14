@@ -1,0 +1,135 @@
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(239, 249, 248);
+}
+html{
+    /* background-color: aliceblue; */
+    font-size: 15px;
+}
+.container{
+    background-color: #414141;
+    height: 90vh;
+    /* display:grid; */
+    width: auto;
+    margin: 20px auto;
+    width: 300px;
+    text-align: left;
+    box-shadow: inset -5px 5px 25px rgb(0, 0, 0);
+
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li
+{
+    list-style: none;
+}
+li a{
+    position: relative;
+width: 68px;
+height: 68px;
+color: #000;
+text-align: center;
+display: block;
+margin: 0 10px;
+border-radius: 50%;
+padding: 6px;
+box-sizing: border-box;
+text-decoration: none;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+background: linear-gradient(0de,#ddd,#fff);
+transition: .05s;
+
+                
+
+}
+li a .fab{
+    width: 100%;
+    height: 100%;
+    display:block;
+    background: linear-gradient(0deg,rgb(255, 255, 255),#ddd);
+    border-radius: 50%;
+    line-height: calc(60px -12px);
+    font-size: 24px;
+    color: white;
+    transition: 0.5s;
+}
+li a:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    background-color:aqua;
+}
+.btn_again{
+    width: 100%;
+    height: 100%;
+    display:block;
+    background: linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height: calc(60px -12px);
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    font-size: 10px;
+
+}
+
+.circle-border {
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(192, 183, 183);
+    background: linear-gradient(0deg,white 33%, rgb(187, 27, 27) 100%);
+    animation: spin .8s linear 0s infinite;
+  }
+  
+  .circle-core {
+    width: 100%;
+    height: 100%;
+    background-color: #414141;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    /* display: flex; *;
+    /* margin: 0 10px; */
+  }
+  
+@keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+  }
+  section{
+    position: absolute;
+    top: 39.5%;
+    left: 44.5%;
+  }
+  .hide{
+    display: none;
+  }
+  .txt{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+   justify-content: center;
+   /* margin-bottom: 2px; */
+   }
